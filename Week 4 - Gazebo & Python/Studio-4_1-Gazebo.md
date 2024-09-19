@@ -17,11 +17,13 @@ git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gaz
 
 Build and source the workspace
 
-### Troubleshooting - no joint trajcetory controller
+### Troubleshooting - no joint trajcetory controller or controller interface
 
 If you run into an issue with building packages due to missing a joint controller run:
 
 ``` bash && sudo apt install ros-humble-joint-trajectory-controller```
+
+``` bash && sudo apt install ros-humble-controller-interface```
 
 ### 2. Pre-configured Docker Container
 
