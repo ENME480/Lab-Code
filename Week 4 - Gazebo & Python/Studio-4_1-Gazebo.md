@@ -17,6 +17,12 @@ git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gaz
 
 Build and source the workspace
 
+### Troubleshooting - no joint trajcetory controller
+
+If you run into an issue with building packages due to missing a joint controller run:
+
+``` bash && sudo apt install ros-humble-joint-trajectory-controller```
+
 ### 2. Pre-configured Docker Container
 
 Find the Dockerfile in ```/Resources/Docker Container/humble_dockerfile.Dockerfile``` and build and run the container. This is the preferred method but it can lead to issues with Gazebo (looking into a foolproof solution - will be updated this week)
