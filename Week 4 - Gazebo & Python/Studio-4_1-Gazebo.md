@@ -28,7 +28,9 @@ If you run into an issue with building packages due to missing a joint controlle
 ## Troubleshooting on Macs
 Run these commands to get Gazebo Classic on ARM Hardware:
 ``` sudo add-apt-repository ppa:openrobotics/gazebo11-non-amd64```
+
 ```sudo apt update```
+
 ```sudo apt install gazebo ```
 
 ### 2. Pre-configured Docker Container
