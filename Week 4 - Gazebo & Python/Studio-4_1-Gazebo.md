@@ -21,9 +21,9 @@ Build and source the workspace
 
 If you run into an issue with building packages due to missing a joint controller run:
 
-``` bash && sudo apt install ros-humble-joint-trajectory-controller```
+``` sudo apt install ros-humble-joint-trajectory-controller```
 
-``` bash && sudo apt install ros-humble-controller-interface```
+``` sudo apt install ros-humble-controller-interface```
 
 ### 2. Pre-configured Docker Container
 
