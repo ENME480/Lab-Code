@@ -25,6 +25,8 @@ If you run into an issue with building packages due to missing a joint controlle
 
 ``` sudo apt install ros-humble-controller-interface```
 
+```sudo apt install ros-humble-ur-*```
+
 ## Troubleshooting on Macs
 Run these commands to get Gazebo Classic on ARM Hardware:
 ``` sudo add-apt-repository ppa:openrobotics/gazebo11-non-amd64```
