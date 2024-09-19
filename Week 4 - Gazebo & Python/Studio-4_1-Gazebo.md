@@ -25,6 +25,10 @@ If you run into an issue with building packages due to missing a joint controlle
 
 ``` sudo apt install ros-humble-controller-interface```
 
+```sudo add-apt-repository ppa:openrobotics/gazebo11-non-amd64
+sudo apt update
+sudo apt install gazebo ```
+
 ### 2. Pre-configured Docker Container
 
 Find the Dockerfile in ```/Resources/Docker Container/humble_dockerfile.Dockerfile``` and build and run the container. This is the preferred method but it can lead to issues with Gazebo (looking into a foolproof solution - will be updated this week)
