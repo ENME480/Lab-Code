@@ -107,7 +107,7 @@ It should open up two windows with UR3e arm in Gazebo & RViz.
 
 ### Troubleshooting - Gazebo does not open up; waiting for controller
 
-Run the following command in a seperate terminal before launching the previous command
+Run the following command in a seperate terminal before launching the previous command (in order to use this method, start and source 3 consoles, run this command, then the one above it then the last command on this page).
 
 ```bash
 gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
