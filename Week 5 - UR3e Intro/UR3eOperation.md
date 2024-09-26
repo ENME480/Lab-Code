@@ -38,7 +38,7 @@ The robot connections and configuration has been setup. You have to interface th
 - Open up the MoveIt node
 
 ```bash
-ros2 launch ur_moveit_config ur3e.launch.py ur_type:=ur3e
+ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur3e
 ```
 
 - You will be shown how to move the robot using MoveIt
