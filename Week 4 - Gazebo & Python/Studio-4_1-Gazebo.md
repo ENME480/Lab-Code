@@ -40,6 +40,8 @@ sudo apt install ros-humble-controller-interface
 sudo apt install ros-humble-ur-*
 
 sudo apt install ros-humble-control-*
+
+sudo apt install ros-humble-ros2-control-*
 ```
 
 ## Troubleshooting on Macs
@@ -92,6 +94,8 @@ cd ~/enme480_ws/src
 git clone https://github.com/ros-simulation/gazebo_ros_pkgs
 cd gazebo_ros_pkgs
 git checkout ros2
+cd ~/enme480_ws/src
+git clone -b humble https://github.com/ros-controls/gazebo_ros2_control
 ```
 
 7. **Build and source your workspace**
