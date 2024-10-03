@@ -103,7 +103,7 @@ You need to create a DH-table for the robot and annotate the given PDF to show t
 
 Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the message type ```JointTrajectory``` and ```JointTrajectoryPoint``` from ```trajectory_msgs```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to th robot sould be in radians but we want to give the input in degrees so ensure that you have converted that.
 
-The second step is to create a function (or multiple functions) in the same Python class to calculate the end effector pose using forward kinematics via DH-parameters, and print that out.
+The second step is to create a function (or multiple functions) in the same Python class to calculate the end effector pose using forward kinematics via DH-parameters, and print that out as the final transformation matrix.
 
 Hint: Use the structure from your ```pubsub``` codes which you have done previously. You can get the message info for ```JointTrajectory``` and ```JointTrajectoryPoint``` here:
 
@@ -135,3 +135,27 @@ Set 3: ```[0 -45 45 -90 30 90]```
 Set 4: ```[90 -60 30 20 10 50]```
 
 Set 5: ```[0 -90 0 0 0 0]``` (robot should be upright)
+
+## Submission
+
+1. Show a screenshot of the base plate with the robot 
+
+2. Show the DH Table for the robot
+
+3. Show a figure with frames and axes marked
+
+4. For each test case, show:
+
+- The set of joint angle values (θ1, θ2, θ3, θ4, θ5, θ6)
+- The final transformation matrix (from Python script). You can
+add it as a readable image of the output window as well.
+- The calculated pose from DH table in simulation vs the pose from ```tf```
+- The scalar error
+
+5. Discuss the sources of error
+
+6. An appendix to show your scripts
+
+- ```enme480_fk.xacro```
+- FK publisher
+- ```tf``` subscriber
