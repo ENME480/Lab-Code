@@ -19,7 +19,7 @@ To do so, we modify the Unified Robot Description Format (URDF) file for the env
 This package contains the mesh files and all the description files to simulate the UR robots. Clone the repositiory in your **src** folder of your workspace
 
 ```bash
-git clone https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
+git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
 ```
 
 Build and source your workspace
