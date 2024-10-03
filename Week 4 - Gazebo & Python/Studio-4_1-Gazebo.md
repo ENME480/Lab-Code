@@ -38,6 +38,8 @@ sudo apt install ros-humble-joint-trajectory-controller
 sudo apt install ros-humble-controller-interface
 
 sudo apt install ros-humble-ur-*
+
+sudo apt install ros-humble-control-*
 ```
 
 ## Troubleshooting on Macs
