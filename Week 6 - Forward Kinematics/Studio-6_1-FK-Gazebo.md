@@ -67,8 +67,10 @@ Snippet 1: Defining the description of Base Plate
 
 Snippet 2: Defining the relationship between base plate and the robot
 
+You will find a code block that defines how the base link connects to the environment. Replace that with the snippet below
+
 ```xml
-   <!-- base_joint fixes ..... to the environment -->
+   <!-- base_joint fixes ..... to the environment  (Find this similar part in the code and replace it) -->
    <joint name="${tf_prefix}base_joint" type="fixed">
      <xacro:insert_block name="origin" />
      <parent link="${parent}" />
