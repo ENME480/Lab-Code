@@ -45,9 +45,9 @@ Snippet 1: Defining the description of Base Plate
    <!-- Define the base plate -->
    <link name="${tf_prefix}base_plate">
      <visual>
-       <origin xyz="0 0 0" rpy="0 0 0" />  <!-- Modify: Adjust origin as needed -->
+       <origin xyz="0 0 0" rpy="0 0 0" />  <!-- Modify Adjust origin as needed -->
        <geometry>
-         <box size="0 0 0"/>  <!-- Modify: Size of the base plate (length x width x height) -->
+         <box size="0 0 0"/>  <!-- Modify Size of the base plate (length x width x height) -->
        </geometry>
        <material name="orange"/>
      </visual>
@@ -80,7 +80,7 @@ You will find a code block that defines how the base link connects to the enviro
    <!-- Attach base plate to the robot's base link -->
    <joint name="${tf_prefix}base_to_base_plate" type="fixed">
      <parent link="${tf_prefix}............" /> <!-- Modify this based on the child and parent -->
-     <child link="${tf_prefix}............." /> <!-- Modify this based on child and parent  (Hint: Check the subsequent code to know the child/parent) -->
+     <child link="${tf_prefix}............." /> <!-- Modify this based on child and parent Hint Check the subsequent code to know the childparent -->
      <origin xyz="0 0 0" rpy="0 0 0"/>  <!-- Adjust origin to place the base plate correctly -->
    </joint>
 ```
