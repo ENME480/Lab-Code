@@ -159,7 +159,7 @@ add it as a readable image of the output window as well.
 6. An appendix to show your scripts
 
 - ```enme480_fk.xacro```
-- FK publisher
+- FK publisher (including the Python script for DH transformation)
 - ```tf``` subscriber
 
 Add everything in one single PDF file and upload it.
