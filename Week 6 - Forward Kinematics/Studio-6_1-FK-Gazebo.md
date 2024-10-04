@@ -107,7 +107,7 @@ Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the mess
 
 The second step is to create a function (or multiple functions) in the same Python class to calculate the end effector pose using forward kinematics via DH-parameters, and print that out as the final transformation matrix.
 
-Hint: Use the structure from your ```pubsub``` codes which you have done previously. You can get the message info for ```JointTrajectory``` and ```JointTrajectoryPoint``` here:
+Hint: Use the structure from your ```pubsub``` codes which you have done previously. You can get the message info for ```JointTrajectory``` and ```JointTrajectoryPoint``` here: http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectory.html & http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectoryPoint.html
 
 Your command should look something like this:
 
