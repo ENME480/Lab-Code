@@ -37,7 +37,7 @@ Here just change two things:
 
 #### - Changes in ```enme480_fk.xacro```
 
-Add the following snippet to add the plate mesh to the environment. The code will be explained in class and you have to figure out where to add the snippets.
+Add the following snippet to add the plate mesh to the environment. The code will be explained in class and you have to figure out where to add the snippets. Keep a base plate dimensions of `0.3 x 0.3 x 0.1`
 
 Snippet 1: Defining the description of Base Plate
 
