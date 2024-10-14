@@ -122,7 +122,7 @@ Don't forget to add the node to your ```setup.py``` in your package.
 
 Here you will be using the ```/tf``` topic which denotes the transformations in your workspace. The topic publishes the relative transform between all the joints. Your goal is to find the relative transform between the ```base_plate``` and the last link on the robot (figure out which is the last link). You will be shown what ```tf``` is in class.
 
-Get the relative transform and print the position and orientation.
+Get the relative transform and print the position and orientation. (Hint: There is a tf2 library that will help you to trnasform between frames without needing to do calcuulations.)
 
 ## 5. Compare the readings 
 
