@@ -97,7 +97,7 @@ You can modify the launch file to have ```ur3e``` as the default argument so tha
 
 Link for UR3e specifications: https://www.universal-robots.com/media/1807464/ur3e-rgb-fact-sheet-landscape-a4.pdf
 
-The PDF for UR3 dimensions is included in the folder for ```Week 6``` and the zero configuration (all joint angles are 0) for the robot looks like [given in this image](UR3e_Zero_angle_Config.png)
+The PDF for UR3 dimensions is included in the folder for ```Week 6``` and the zero configuration (all joint angles are 0) for the robot looks like [given in this image](images/UR3e_Zero_angle_Config.png)
 
 You need to create a DH-table for the robot and annotate the given PDF to show the frames and axes used. The unknowns here will be the joint angles. Include the base plate in your calculations as well.
 
