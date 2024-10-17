@@ -139,7 +139,7 @@ You should be able to see the topics `/ur3/position` and `/ur3/command`.
 
 ~~Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the message type ```JointTrajectory``` and ```JointTrajectoryPoint``` from ```trajectory_msgs```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to th robot sould be in radians but we want to give the input in degrees so ensure that you have converted that.~~
 
-Using the topic ```/ur3/command``` and the message type ```CommandUR3e``` from ```ur3e_mrc.msg```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to the robot should be in radians but we want to give the input in degrees so ensure that you have converted that.
+Using the topic ```/ur3/command``` and the message type ```CommandUR3e``` from ```ur3e_mrc.msg```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to the robot should be in radians but we want to give the input in degrees so ensure that you have converted that. You can set the velocity and acceleration as `1.0`
 
 The second step is to create a function (or multiple functions) in the same Python class to calculate the end effector pose using forward kinematics via DH-parameters, and print that out as the final transformation matrix.
 
