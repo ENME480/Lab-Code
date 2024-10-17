@@ -97,17 +97,82 @@ You can modify the launch file to have ```ur3e``` as the default argument so tha
 
 Link for UR3e specifications: https://www.universal-robots.com/media/1807464/ur3e-rgb-fact-sheet-landscape-a4.pdf
 
-The PDF for UR3 dimensions is included in the folder for ```Week 6```
+The PDF for UR3 dimensions is included in the folder for ```Week 6``` and the zero configuration (all joint angles are 0) for the robot looks like [given in this image](UR3e_Zero_angle_Config.png)
 
 You need to create a DH-table for the robot and annotate the given PDF to show the frames and axes used. The unknowns here will be the joint angles. Include the base plate in your calculations as well.
 
 ## 3. Creating a Publisher script to move the robot
 
-Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the message type ```JointTrajectory``` and ```JointTrajectoryPoint``` from ```trajectory_msgs```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to th robot sould be in radians but we want to give the input in degrees so ensure that you have converted that.
+(NEW) Bridge packages for custom topics between ur_driver and ENME480 labs
+
+- Clone the following repositories into your workspace
+
+```bash
+git clone https://github.com/MarylandRoboticsCenter/ur3e_mrc.git
+git clone https://github.com/ENME480/ur3e_enme480.git
+```
+- Build and source your workspace.
+
+
+We have a predefined custom message for obtaining position and sending commands:
+
+CommandUR3e.msg
+```
+float64[] destination
+float64 v
+float64 a
+bool io_0
+```
+
+PositionUR3e.msg
+```
+float64[] position
+bool is_ready
+```
+
+Now run the following command:
+```bash
+ros2 launch ur3e_enme480 ur3e_sim_enme480.launch.py
+```
+
+You should be able to see the topics `/ur3/position` and `/ur3/command`.
+
+~~Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the message type ```JointTrajectory``` and ```JointTrajectoryPoint``` from ```trajectory_msgs```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to th robot sould be in radians but we want to give the input in degrees so ensure that you have converted that.~~
+
+Using the topic ```/ur3/command``` and the message type ```CommandUR3e``` from ```ur3e_mrc.msg```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to the robot should be in radians but we want to give the input in degrees so ensure that you have converted that.
 
 The second step is to create a function (or multiple functions) in the same Python class to calculate the end effector pose using forward kinematics via DH-parameters, and print that out as the final transformation matrix.
 
-Hint: Use the structure from your ```pubsub``` codes which you have done previously. You can get the message info for ```JointTrajectory``` and ```JointTrajectoryPoint``` here: http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectory.html & http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectoryPoint.html
+Your code will have a structure like this (it can be different but just a baseline)
+
+```python
+import ....
+
+class ForwardKinematicsUR3e(...)
+
+  def __init__(self): 
+    ...
+    ...
+
+  def move_robot(...):
+    ...
+    ...
+
+  def calculate_fk_from_dh(...):
+    ...
+    ...
+
+    
+def main(...):
+
+  ...
+  ...
+
+if __name__ == '__main__':
+  main()
+```
+
+Hint: Use the structure from your ```pubsub``` codes which you have done previously. ~~You can get the message info for ```JointTrajectory``` and ```JointTrajectoryPoint``` here: http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectory.html & http://docs.ros.org/en/noetic/api/trajectory_msgs/html/msg/JointTrajectoryPoint.html~~
 
 Your command should look something like this:
 
@@ -120,9 +185,11 @@ Don't forget to add the node to your ```setup.py``` in your package.
 
 ## 4. Create a subscriber to get the end effector pose
 
-Here you will be using the ```/tf``` topic which denotes the transformations in your workspace. The topic publishes the relative transform between all the joints. Your goal is to find the relative transform between the ```base_plate``` and the last link on the robot (figure out which is the last link). You will be shown what ```tf``` is in class.
+~~Here you will be using the ```/tf``` topic which denotes the transformations in your workspace. The topic publishes the relative transform between all the joints. Your goal is to find the relative transform between the ```base_plate``` and the last link on the robot (figure out which is the last link). You will be shown what ```tf``` is in class.~~
 
-Get the relative transform and print the position and orientation. (Hint: There is a tf2 library that will help you to trnasform between frames without needing to do calcuulations.)
+~~Get the relative transform and print the position and orientation. (Hint: There is a tf2 library that will help you to trnasform between frames without needing to do calcuulations.)~~
+
+TF (TransForm) calculations are being done on the backend now. You will get the position of the end effector from `/ur3/position`. 
 
 ## 5. Compare the readings 
 
@@ -151,7 +218,7 @@ Set 5: ```[0 -90 0 0 0 0]``` (robot should be upright)
 - The set of joint angle values (θ1, θ2, θ3, θ4, θ5, θ6)
 - The final transformation matrix (from Python script). You can
 add it as a readable image of the output window as well.
-- The calculated pose from DH table in simulation vs the pose from ```tf```
+- The calculated pose from DH table in simulation vs the pose from ```/ur3/position```
 - The scalar error
 
 5. Discuss the sources of error
@@ -160,6 +227,6 @@ add it as a readable image of the output window as well.
 
 - ```enme480_fk.xacro```
 - FK publisher (including the Python script for DH transformation)
-- ```tf``` subscriber
+- ~~```tf``` subscriber~~ Screenshot of messages received from `/ur3/position`
 
 Add everything in one single PDF file and upload it.
