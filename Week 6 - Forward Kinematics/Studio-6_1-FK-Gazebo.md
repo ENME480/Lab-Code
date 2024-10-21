@@ -116,19 +116,22 @@ git clone https://github.com/ENME480/ur3e_enme480.git
 
 We have a predefined custom message for obtaining position and sending commands:
 
-CommandUR3e.msg
+CommandUR3e.msg 
 ```
 float64[] destination
 float64 v
 float64 a
 bool io_0
 ```
+(destination is the set of joint angles `[theta1 theta2 theta3 theta4 theta5 theta6]`)
 
 PositionUR3e.msg
 ```
 float64[] position
 bool is_ready
 ```
+
+(position is the set of 6DoF pose of the end effector `[x y z roll pitch yaw]`)
 
 Now run the following command:
 ```bash
