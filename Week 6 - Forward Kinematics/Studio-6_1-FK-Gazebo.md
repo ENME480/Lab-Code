@@ -135,7 +135,7 @@ Now run the following command:
 ros2 launch ur3e_enme480 ur3e_sim_enme480.launch.py
 ```
 
-You should be able to see the topics `/ur3/position` and `/ur3/command`.
+You should be able to see the topics `/ur3/position` and `/ur3/command`. Refer to this [link](https://github.com/ENME480/ur3e_enme480/tree/main) for details of the package and its usage.
 
 ~~Using the topic ```/joint_trajectory_controller/joint_trajectory``` and the message type ```JointTrajectory``` and ```JointTrajectoryPoint``` from ```trajectory_msgs```, create a publisher to move the robot to desired joint angles. Keep in mind that the angles given to th robot sould be in radians but we want to give the input in degrees so ensure that you have converted that.~~
 
