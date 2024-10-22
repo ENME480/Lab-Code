@@ -5,7 +5,7 @@
 - Add elements to your Gazebo environment
 - Calculate DH parameters of UR3e
 - Create a publisher to move the robot to desired joint states
-- Create a subscriber to find the end effector pose
+- Find the end effector pose
 - Validate and compare the pose readings from DH-parameter calculation & end effector
 
 ## 1. Adding Physical Elements in Gazebo
@@ -186,7 +186,7 @@ where the numbers represent the six joint angles in degrees. Hint: Look into how
 
 Don't forget to add the node to your ```setup.py``` in your package.
 
-## 4. Create a subscriber to get the end effector pose
+## 4. Get the end effector pose from `/ur3/position`
 
 ~~Here you will be using the ```/tf``` topic which denotes the transformations in your workspace. The topic publishes the relative transform between all the joints. Your goal is to find the relative transform between the ```base_plate``` and the last link on the robot (figure out which is the last link). You will be shown what ```tf``` is in class.~~
 
