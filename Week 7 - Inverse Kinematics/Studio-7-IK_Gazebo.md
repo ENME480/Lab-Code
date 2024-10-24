@@ -121,9 +121,19 @@ You command should look like this:
 ros2 run <package_name> ur3e_sim_ik_publisher <x> <y> <z> <Yaw>
 ```
 
+
+## Test Cases
+
+| Test Point Inputs (x, y, z, yaw)    | IK solution (𝜽𝟏, … 𝜽𝟔)           | Output from `/ur3/position`  |
+| ------------- |:-------------:| -----:|
+| (0.2, 0.3, 0.3, 45) | |
+(0.1, 0.4, 0.1, 90) | |
+(0.2, 0.2, 0.2, 0) | |
+(0.2, -0.2, 0.1, 0) | |
+(0.2, 0.3, 0.4, 30) |      |     |
 ## Submission
 
 1.  A pdf of your code complete with comments describing the steps you've taken
 2.  A pdf containing a (neatly) written/typed solution for IK showing how you derived your equations from the geometry
-3.  A comparison of error between your IK script and the output of the ```ur3/position``` topic with a discussion of possible error sources
+3.  A comparison of error between your IK script and the output of the ```ur3/position``` topic for the test cases with a discussion of possible error sources.
 4.  A brief discussion of any possible singularities in the math and what could be done to avoid them (you don't need to implement this, we just want you thinking about strategies!)
