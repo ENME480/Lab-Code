@@ -58,6 +58,9 @@ git pull
 
 2. Download the URDF `enme480_ik.xacro` (from `Code Resources` in Week 7 on this page) in your `urdf` folder. Replace `ur.urdf.xacro` as well.
 
+Add the `UR3SuctionCupMount.stl` from `Code Resources` to your `Universal_Robots_ROS2_Description//meshes/ur3/visual/` folder.
+
+
 3. Create a publisher `ur3e_ik_sim.py` with node name `ur3e_sim_ik_publisher`. It will have a structure somewhat like this:
 
 ```python
