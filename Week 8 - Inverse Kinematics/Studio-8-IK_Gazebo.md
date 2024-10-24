@@ -1,4 +1,4 @@
-# Week 7 - UR3e Inverse Kinematics on Gazebo
+# Week 8 - UR3e Inverse Kinematics on Gazebo
 
 ## Objectives
 
