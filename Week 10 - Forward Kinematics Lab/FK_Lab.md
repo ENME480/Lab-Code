@@ -44,3 +44,7 @@ Run the robot for the following test points:
 | [-30, -60, 80, -10, -90, -30] | | |
 | [30 -70 80 -10 -90 10] | | |
 | [-30, -60, 60, -10, -90, -30] | | |
+
+# Submission
+
+We will send out details for creating a lab report later on so record the data you enter in table above for future
