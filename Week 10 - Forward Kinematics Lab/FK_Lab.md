@@ -24,6 +24,8 @@ The robot connections and configuration has been setup. You have to interface th
 
 Due to inaccuracies in some of the DH tables, resulting in safety risks, we are giving you a code structure that you need to enter your code in.
 
+It is located in `~/rosPackages/ENME480_ws/enme480_fk_labs/enme480_fk_labs/ur3e_fk.py`
+
 If you are using your own code, remember to change the node name to `ur3e_fk_publisher`
 
 ## 3. Predicting where the laser point will land
