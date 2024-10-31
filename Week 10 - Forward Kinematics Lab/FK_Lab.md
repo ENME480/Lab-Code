@@ -19,6 +19,12 @@ The robot connections and configuration has been setup. You have to interface th
 - Find the `commands2run.txt` file on the Desktop
 - Follow instructions in the file to get the robot interfaced with ROS
 
+In two more terminal windows launch these commands:
+
+```bash
+ros2 launch ur3e_mrc ur3e_enme480.launch
+```
+
 
 ## 2. Modify the FK script to move the robot
 
@@ -27,6 +33,12 @@ Due to inaccuracies in some of the DH tables, resulting in safety risks, we are 
 It is located in `~/rosPackages/ENME480_ws/enme480_fk_labs/enme480_fk_labs/ur3e_fk.py`
 
 If you are using your own code, remember to change the node name to `ur3e_fk_publisher`
+
+To run it:
+
+```bash
+ros2 run enme480_lab_fk ur3e_fk joint1 joint2 joint3 joint4 joint5 joint6
+```
 
 ## 3. Predicting where the laser point will land
 
