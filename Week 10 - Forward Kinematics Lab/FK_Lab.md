@@ -19,7 +19,7 @@ The robot connections and configuration has been setup. You have to interface th
 - Find the `commands2run.txt` file on the Desktop
 - Follow instructions in the file to get the robot interfaced with ROS
 
-In two more terminal windows launch these commands:
+In one more terminal windows launch these commands:
 
 ```bash
 ros2 launch ur3e_mrc ur3e_enme480.launch
@@ -47,6 +47,10 @@ Since you know the position and orientation of the end effector (attached with a
 Assume the `z_table = 0`. 
 
 We are providing you with the code in lab, but you need to show the math behind it in your lab report.
+<!-- 
+```bash
+ros2 topic pub --once /ur3/laser_point std_
+``` -->
 
 ## 4. Test Points
 
