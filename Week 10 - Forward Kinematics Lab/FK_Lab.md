@@ -47,10 +47,12 @@ Since you know the position and orientation of the end effector (attached with a
 Assume the `z_table = 0`. 
 
 We are providing you with the code in lab, but you need to show the math behind it in your lab report.
-<!-- 
+
+Turning on the laser pointer:
+
 ```bash
-ros2 topic pub --once /ur3/laser_point std_
-``` -->
+ros2 topic pub --once /ur3/laser_point std_msgs/msg/Bool data:\ true\
+```
 
 ## 4. Test Points
 
