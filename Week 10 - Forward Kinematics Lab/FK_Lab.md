@@ -51,7 +51,7 @@ We are providing you with the code in lab, but you need to show the math behind 
 Turning on the laser pointer:
 
 ```bash
-ros2 topic pub --once /ur3/laser_point std_msgs/msg/Bool data:\ true\
+ros2 topic pub --once /ur3/laser_point std_msgs/msg/Bool "data: true"
 ```
 
 ## 4. Test Points
