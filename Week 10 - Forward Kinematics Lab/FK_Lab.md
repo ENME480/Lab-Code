@@ -58,7 +58,7 @@ ros2 topic pub --once /ur3/laser_point std_msgs/msg/Bool "data: true"
 
 Run the robot for the following test points:
 
-| Test Point Inputs (𝜽𝟏, … 𝜽𝟔)    | End Effector Position (Your Code)        | Laser Position (from Code) | Laser Position (Measured) |
+| Test Point Inputs (𝜽𝟏, … 𝜽𝟔)    | End Effector Position (Your Code) `(x y z)`        | Laser Position on Workbench (from Code) (`x,y`) | Laser Position on Workbench(Measured) `(x, y)` |
 | --------------- |:---------------:| --------:| --------:|
 | [0, -45, 0, 45, -90, 60] | | |
 | [-30, -60, 80, -10, -90, -30] | | |
