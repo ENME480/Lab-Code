@@ -67,4 +67,10 @@ Run the robot for the following test points:
 
 # Submission
 
-We will send out details for creating a lab report later on so record the data you enter in table above for future
+Please create a neatly typed/written report for the lab including the following:
+
+- Correct frame and axes assignments for the UR3e
+- A correct DH table for the UR3e (with the updated dimensions)
+- A detailed derivation of how the position of laser point is predicted on the workbench.
+- Error Analysis
+- Your code snippets for the functions supposed to be changed (function for moving the robot and calulating DH transformation matrix)
