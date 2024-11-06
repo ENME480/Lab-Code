@@ -72,5 +72,5 @@ Please create a neatly typed/written report for the lab including the following:
 - Correct frame and axes assignments for the UR3e
 - A correct DH table for the UR3e (with the updated dimensions)
 - A detailed derivation of how the position of laser point is predicted on the workbench.
-- Error Analysis
+- Error Analysis (for at least 2 points)
 - Your code snippets for the functions supposed to be changed (function for moving the robot and calulating DH transformation matrix)
