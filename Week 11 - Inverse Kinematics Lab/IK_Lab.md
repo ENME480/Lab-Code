@@ -37,6 +37,7 @@ You need to modify the following functions within the given snippet (do not chan
 - `calculate_dh_transform()` - will be exactly same as last time (just make changes to DH parameters if wrong)
 - `inverse_kinematics()` - will be exactly similar as your simulation code
 
+Helpful Tip: Use tools like Pastebin or Google Docs to move your code from your laptop to the lab machine
 
 If you are using your own code, remember to change the node name to `ur3e_ik_publisher`
 
