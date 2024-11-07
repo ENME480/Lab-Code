@@ -78,7 +78,7 @@ Run the robot for the following test points and record the following data:
 | [0.2, 0.2, 0.2, 0] | | | | | | | |
 | [0.2, 0.4, 0.2, 0] | | | | | | | |
 | [0.3, 0.4, 0.1, 45] | | | | | | | |
-| [0.3, -0.2, 0.25, 60]  | | | | | | | |
+| [0.3, 0.2, 0.25, 60]  | | | | | | | |
 | [0.25, 0.3, 0.3, -30]  | | | | | | | |
 
 ## 5. Before you leave the lab
