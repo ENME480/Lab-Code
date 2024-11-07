@@ -31,6 +31,13 @@ Due to inaccuracies in some of your IK calculations, resulting in safety risks d
 
 It is located in `~/rosPackages/ENME480_ws/src/enme480_fk_labs/enme480_fk_labs/ur3e_ik.py`
 
+To refresh the folder to original state run the following commands:
+
+```bash
+cd ~/ENME480_ws/src/enme480_lab_fk
+git checkout .
+```
+
 You need to modify the following functions within the given snippet (do not change anything else in the code):
 
 - `send_command()` - will be the same as last time (just remove conversion to radians since IK takes care of it)
