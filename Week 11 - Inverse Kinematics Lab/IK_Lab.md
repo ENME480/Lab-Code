@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- Use inverse kinematics (FK) to compute the required joint angles of a UR3e robot arm for its end effector to reach a specific point.
+- Use inverse kinematics (IK) to compute the required joint angles of a UR3e robot arm for its end effector to reach a specific point.
 - Determine if the laser pointer is close to the predicted cartesian coordinates.
 - Publish commands to control the UR3e robot in ROS2 and visualize results.
 
