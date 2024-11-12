@@ -74,7 +74,7 @@ Then the UR3 will complete the whole task.
 A suggested solution procedure for the project is to handle the tasks sequentially in the following order:
 
 | Step  | Script to Edit | Task | 
-| :---------------: |:---------------:| --------:| 
+| :---------------: |:---------------:| :--------| 
 | 1 | `spawn_blocks.py`| Generate random initial positions for target blocks |
 | 2 | `find_block_pos.py` | Find centroid position of each colored block in world frame|
 | 3 | `kinematic_functions.py`| Forward and inverse kinematics (from previous labs) |
