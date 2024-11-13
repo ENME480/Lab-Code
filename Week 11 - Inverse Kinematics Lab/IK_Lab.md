@@ -94,8 +94,11 @@ git checkout .
 
 # Submission
 
-We will update the submission instructions soon.
-<!-- Please create a neatly typed/written report for the lab including the following:
+Please create a neatly typed/written report for the lab including the following:
+1. Your IK derivation - you can resue the one from Week 8 submission if that was right. If anything changed or you noticed errors in your previous derivation, make a note of it in the report including the reason behind the error.
+2. Comparsion table for Step 4.
+3. Write a paragraph on the reasons behind discrepancies in measurements and calculations.
+4. What are the potential sources of singlularities and how will avoid them when you are implementing the code?
 
 - Correct frame and axes assignments for the UR3e
 - A correct DH table for the UR3e (with the updated dimensions)
