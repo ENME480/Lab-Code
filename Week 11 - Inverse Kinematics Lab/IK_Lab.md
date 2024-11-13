@@ -99,9 +99,4 @@ Please create a neatly typed/written report for the lab including the following:
 2. Comparsion table for Step 4.
 3. Write a paragraph on the reasons behind discrepancies in measurements and calculations.
 4. What are the potential sources of singlularities and how will avoid them when you are implementing the code?
-
-- Correct frame and axes assignments for the UR3e
-- A correct DH table for the UR3e (with the updated dimensions)
-- A detailed derivation of how the position of laser point is predicted on the workbench.
-- Error Analysis (for at least 2 points)
-- Your code snippets for the functions supposed to be changed (function for moving the robot and calulating DH transformation matrix) -->
+5. Code snippet of `inverse_kinematics()` function that you used.
