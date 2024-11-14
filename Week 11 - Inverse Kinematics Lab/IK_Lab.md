@@ -98,5 +98,5 @@ Please create a neatly typed/written report for the lab including the following:
 1. Your IK derivation - you can resue the one from Week 8 submission if that was right. If anything changed or you noticed errors in your previous derivation, make a note of it in the report including the reason behind the error.
 2. Comparsion table for Step 4.
 3. Write a paragraph on the reasons behind discrepancies in measurements and calculations.
-4. What are the potential sources of singlularities and how will avoid them when you are implementing the code?
+4. What are the potential sources of singlularities and how will avoid them when you are implementing the code? If you found any singularities, be sure to list them and discuss possible causes.
 5. Code snippet of `inverse_kinematics()` function that you used.
