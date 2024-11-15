@@ -70,6 +70,13 @@ Before you run this script, ensure that you are in the correct directory. Assumi
 cd ENME480_ws/src/enme480_project/enme480_project/
 python3 get_perspective_warping_with_aruco.py
 ```
+#### Troubleshooting: 
+If you get a missing keyboard package error run the following command
+
+```bash
+pip install keyboard
+```
+
 
 Once run, you will see a window with the live camera feed. Click on the reference points in the same order that you have listed in your script. It will calulate the perspective transform and a new window will pop-up showing a blue dot at `(175,175)` on the table coordinate frame. If this is right, you can proceed to the next script.
 
@@ -82,7 +89,22 @@ This script will give you a live detection of the aruco markers and their locati
 
 This is the ROS node and a Python class for all the functions in the `aruco_detection_test.py` script. If your `aruco_detection_test.py` could detect the block coordinates correctly, please copy the same function to the snippet for `image_frame_to_table_frame()` function in this script as well.
 
-You can test this script by running the following command
+You can test this script by running the following commands:
+
+- In a new terminal in the docker container, launch the camera node:
+
+```bash
+ros2 launch usb_cam camera.launch.py
+```
+
+#### Troubleshooting: 
+If you get a Pydantic error run the following command
+
+```bash
+sudo pip install pydantic==1.10.9
+```
+
+Once the camera node is up and running, run the following command in a seperate terminal:
 
 ```bash
 ros2 run enme480_project aruco_tracker
