@@ -156,6 +156,6 @@ ros2 run enme480_project main_pipeline
 One single PDF containing the following:
 
 - Pseudo code for detecting and moving the block  (no specific format to be followed)
-- Math for camera frame to table frame
+- Math for camera frame to table frame (your intuition behind the perspective warping, and transformation from camera frame to image frame)
 - Video of pick and place task on UR3e (as a link (GDrive/YouTube) in the report)
 - Extra Credit: Stacking (3.33 pts per block) - Max 10pts possible 
